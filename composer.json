@@ -1,0 +1,22 @@
+{
+    "name": "ceive/filesystem",
+    "description": "Filesystem utils and cases",
+    "type": "component",
+    "license": "Apache 2.0",
+    "authors": [
+        {
+            "name": "Alexey Kutuzov",
+            "email": "lexus27.khv@gmail.com"
+        }
+    ],
+	"autoload" : {
+	  "psr-4": {
+		"Ceive\\Filesystem\\": "src/"
+	  }
+	},
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    }
+}
