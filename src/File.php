@@ -42,7 +42,7 @@ abstract class File implements FileInterface{
 	 * @return $this
 	 */
 	public function moveTo($path, $force = false){
-		FS::moveRecursive($this->path, $path, $force?FS::STRATEGY_OVERWRITE:FS::STRATEGY_DENY);
+		FS::moveRecursive($this->path, $path, $force?FS::S_REPLACE:FS::S_REJECT);
 		$this->path = $path;
 		return $this;
 	}
@@ -53,7 +53,7 @@ abstract class File implements FileInterface{
 	 * @return $this
 	 */
 	public function copyTo($path, $force = false){
-		FS::copyRecursive($this->path, $path, $force?FS::STRATEGY_OVERWRITE:FS::STRATEGY_DENY);
+		FS::copyRecursive($this->path, $path, $force?FS::S_REPLACE:FS::S_REJECT);
 		return $this;
 	}
 }

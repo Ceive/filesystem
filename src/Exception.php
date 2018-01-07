@@ -7,7 +7,7 @@
 namespace Ceive\Filesystem;
 
 use Ceive\Filesystem\Exception\ExceptionAlreadyExists;
-use Ceive\Filesystem\Exception\ExeptionNotExists;
+use Ceive\Filesystem\Exception\ExceptionNotExists;
 use Ceive\Filesystem\Exception\ExceptionPermissionsDenied;
 
 class Exception extends \Exception{
@@ -62,7 +62,7 @@ class Exception extends \Exception{
 		return new ExceptionPermissionsDenied($path, $message);
 	}
 	public static function notExists($path, $message = ''){
-		return new ExeptionNotExists($path, $message);
+		return new ExceptionNotExists($path, $message);
 	}
 	
 	public static function error($message, $code = 0, $previous = null){

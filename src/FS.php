@@ -98,7 +98,7 @@ class FS{
 	 * @return bool
 	 * @throws Exception
 	 * @throws Exception\ExceptionAlreadyExists
-	 * @throws Exception\ExeptionNotExists
+	 * @throws Exception\ExceptionNotExists
 	 */
 	public static function copyRecursive($source_path, $destination_path, $strategy = false, $filePermissions = null, $dirPermissions = null){
 		list($strategyFile,$strategyDir) = $strategy = self::getStrategy($strategy);

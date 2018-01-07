@@ -9,10 +9,10 @@ namespace Ceive\Filesystem\Exception;
 
 /**
  * @Author: Alexey Kutuzov <lexus27.khv@gmail.com>
- * Class ExeptionNotExists
+ * Class ExceptionNotExists
  * @package Ceive\Filesystem\Exception
  */
-class ExeptionNotExists extends PathAware{
+class ExceptionNotExists extends PathAware{
 	
 }
 
